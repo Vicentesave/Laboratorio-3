@@ -8,10 +8,52 @@ body {
   padding: 0;
 }
 
+
 .logo > img {
   width: 50px;
 }
 
+
+@media screen and (max-width: 767px) { 
+
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .navbar {
+    background-color: gray;
+  }
+  .navbar .hamburger {
+    text-align: right;
+    color: white;
+  }
+  .navbar ul {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+  }
+  main .product {
+    border: 1px solid gainsboro;
+    
+  }
+  
+  .social {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 40px;
+    
+  }
+  
+  .social li {
+    list-style: none;
+  }
+}
 @media screen and (min-width: 1025px) { 
 
   header {
@@ -30,7 +72,7 @@ body {
   .hamburger {
     display: none;
   }
-  li {
+  .navbar li {
     display: inline-block;
     padding: 20px;
     color: white;
@@ -49,6 +91,21 @@ body {
   .product p {
     text-align: left;
   }
+  .social {
+    border-top: 2px solid gainsboro;
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: 20px;
+  }
+
+  .social li {
+    list-style: none;
+    padding-top: 10px;
+  }
+  .social i {
+    color: black;
+  }
 
 }
 
@@ -66,7 +123,7 @@ body {
     text-align: right;
     background-color: gray;
   }
-  li {
+  .navbar li {
    display: none;
   }
   main {
@@ -80,7 +137,20 @@ body {
     width: 80%;
     text-align: center;
     margin-bottom: 1%;
-    
-    
+  }
+  .social {
+    border-top: 2px solid gainsboro;
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: 20px;
+  }
+  .social li {
+    list-style: none;
+    padding-top: 10px;
+  }
+  .social i {
+    color: black;
   }
 }
+
